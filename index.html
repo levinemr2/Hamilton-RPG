@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Hamilton RPG</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div id="dialog" title="Basic dialog">
+      <h3>Welcome to Hamilton!</h3>
+      <p class="introText">1. Select a player to begin the game. <br>
+        2. Then chose the defender <br>
+        3. Hit the attack button to attack your opponent <br>
+      4. Each attack you make, your attack power adds to itself <br>
+    5. Win or Lose, hit the reset button to play again! </p>
+    </div>
+    <div class="row">
+      <h1>Hamilton</h1>
+    </div>
+    <div id="chooseChar" class="row">
+      <h2>Choose Character</h2>
+      <div class="col-md-3 char player" data-user-name="alex">
+        <p>Alexander Hamilton</p>
+        <div id="alex" class='character good shake'></div>
+        <p id='alexHP' class="hp">150</p>
+      </div>
+      <div class="col-md-3 char player" data-user-name="burr">
+        <p>Aaron Burr</p>
+        <div id="burr" class='character good'></div>
+        <p id='burrHP' class="hp">180</p>
+      </div>
+      <div class="col-md-3 char player" data-user-name="eliza">
+        <p>Eliza</p>
+        <div id="eliza" class='character evil'></div>
+        <p id='elizaHP' class="hp">200</p>
+      </div>
+      <div class="col-md-3 char player" data-user-name="king">
+        <p>King George</p>
+        <div id="king" class='character evil'></div>
+        <p id='kingHP' class="hp">250</p>
+      </div>
+    </div>
+
+    <div id="yourChar" class='row'>
+      <h2 id='charText'>Your Character</h2>
+      <button class="reset">Reset</button>
+    </div>
+    <div id="enemies" class='row'>
+
+      <h2>Enemy Options</h2>
+    </div>
+    <div id="fight" class="row">
+      <h2>Current Enemy</h2>
+      <button class="attack">Attack</button>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="assets/javascript/game.js" charset="utf-8"></script>
+</body>
+
+</html>
